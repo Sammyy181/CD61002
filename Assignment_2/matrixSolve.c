@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "SuccessiveOverRelaxation.c"  
 #include "sDescent.c" 
+#include "CG.c"
+#include "BICGSTAB.c"
 
 int main() {
     int n, i, j;
@@ -44,10 +46,10 @@ int main() {
 
     // Solve
     //double *U = solve_SOR(A, B, n, 0.999);
-    double *U = solve_StepDes(A, B, n);
+    double *U = iterBICGSTAB(A, B, n);
 
     // Print solution
-    printf("\nSolution vector U:\n");
+    //printf("\nSolution vector U:\n");
     /*for (i = 0; i < n; i++)
         printf("U[%d] = %lf\n", i, U[i]); */
 

@@ -54,6 +54,6 @@ double* solve_SOR(double **A, double *B, int n, double rho){
 
     } while (max_error > error_margin && no_iter < stop_iter);
 
-    printf("Number of Iterations for SOR with w = %.1f - %d", w, no_iter);
+    printf("Converged in %d iterations with error %e\n", no_iter, error);
     return x_k1;
 }

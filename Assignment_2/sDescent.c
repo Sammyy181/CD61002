@@ -28,7 +28,6 @@ double* solve_StepDes(double** A, double* B, int n){
     }
 
     do{
-
         // Dot product of A and x
         alphanum = 0;
         alphaden = 0;
@@ -72,7 +71,7 @@ double* solve_StepDes(double** A, double* B, int n){
 
     } while(no_iter < stop_iter && error > error_margin);
 
-    printf("Number of Iterations for Steepest Descent - %d", no_iter);
+    printf("Converged in %d iterations with error %e\n", no_iter, error);
     free(residual);
     free(P);
     return x;

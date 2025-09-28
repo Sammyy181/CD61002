@@ -52,7 +52,7 @@ double* solve_SOR(double **A, double *B, int n, double w){
         printf("Error - %.4f\n", max_error);
         if(no_iter <= 11 && no_iter >=9){
             for(i = 0; i < n; i++){
-                printf("Difference between iterations at index %d = %f", i, (x_k1[i] - x_k[i]));
+                printf("Difference between iterations at index %d = %f\n", i, (x_k1[i] - x_k[i]));
             }
         }   
 
