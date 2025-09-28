@@ -10,8 +10,8 @@ double* solve_StepDes(double** A, double* B, int n){
     int no_iter;
     int i;
     int row, col;
-    int stop_iter = 4000;
-    double error_margin = 1e-3;
+    int stop_iter = 8000;
+    double error_margin = 1e-4;
 
     double Ax_row;
     double* P = calloc(n, sizeof(double));
