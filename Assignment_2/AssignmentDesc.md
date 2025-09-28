@@ -23,4 +23,14 @@ $$
 
 As only interior points were required for the matrix, given the distance as 0.02, 0.04 and 0.08, the number of interior points were given by (n-2) squared. Thus, the the matrices were of 2401x2401, 576x576 and 121x121 size respectively.
 
-## 
+It resulted in a pentadiagonal symmetric matrix.
+
+## Successive Over Relaxation (Optimum)
+
+For Successive Over Relaxation, the values were as follows:
+
+| Step Size | Optimum ω | Number of Iterations | CPU Time (in s) |
+|-----------|-----------|-----------------------|-----------------|
+| 0.08      | 0.9824    | 37                    | 3.7e-3          |
+| 0.04      | 0.9960    | 73                    | 9.5e-2          |
+| 0.02      | 0.9990    | 135                   | 2.73            |
